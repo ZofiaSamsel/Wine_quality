@@ -1,7 +1,9 @@
 # Wine_quality
 
 ## Examples to look at:
-
+- [Neural Network](https://www.kaggle.com/code/andrecarneiroamaral/wine-quality-classification-neural-networks)
+- [Cool Visualization](https://www.kaggle.com/code/qusaybtoush1990/wine-quality)
+- [Outlier](https://www.kaggle.com/code/mohitgoyal522/wine-quality-data-analysis-and-prediction)
 
 ## Background Info Intro: 
 
