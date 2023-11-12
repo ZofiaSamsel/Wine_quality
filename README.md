@@ -9,6 +9,9 @@
 
 Discuss the background of the dataset.
 
+In the *Modeling wine preferences by data mining from physicochemical properties* by P. Cortez, A. Cerdeira, Fernando Almeida, Telmo Matos, J. Reis. 2009, the authors used novel method *the sensitivity analysis* that performs simultaneous variable and model selection for NN and SVM techniques.
+
+
 ## Research Questions
 ### Statistics Outliers Detection:
 1. Assess the homogeneity of wine qualities from different vineyards to determine if they follow a Gaussian distribution. Utilize QQ plots alongside other statistical tests for illustration.

@@ -11,7 +11,8 @@ layout: default
 - **Sources:** UCIML Python Library and CSV files.
 <br>
 
-- **Data Sets:** Red Wine 🍷 (1599 data points)and White Wine 🥂 datasets(4898 data points).
+- **Data Sets:** Red Wine 🍷 (**1599** data points) and White Wine 🥂 datasets (**4898** data points) 
+  - the Vinho Verde wine (from the Minho region of Portugal) taste preferences
   - Both datasets include physicochemical properties of wine and quality scores.
   - Example features: Fixed Acidity, Volatile Acidity, Citric Acid, etc.
   - Data spans various quality levels from 0 to 10.
@@ -25,9 +26,10 @@ layout: default
 
 ### Key Research Areas 🔍
 - **Statistics & Outliers:** Assessing wine quality homogeneity and exploring outliers.
-- **Predictive Analysis:** Classifying wine quality tiers, evaluating models like logistic regression and Random Forest for accuracy, and identifying key quality factors.
+- **Predictive Analysis:** Classifying wine quality tiers, evaluating models like logistic regression and Random Forest for accuracy, and identifying key quality factors. 
 - **Preventive Insights:** Developing strategies to prevent poor-quality production and determining distinguishing factors of top-quality wines.
 - **Clustering Techniques:** Examining variations in high-rated wines and applying K-means clustering for in-depth composition analysis.
+(what about using PCA?? here)
 
 <br>
 
@@ -59,5 +61,5 @@ layout: default
 
 ### Next Steps 🛤️
 - Explore data normalization techniques.
-- Begin model development and testing.
+- Begin model development and testing (grid search for best model and hyperparameters).
 ---
