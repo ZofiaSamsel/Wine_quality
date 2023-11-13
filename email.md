@@ -24,7 +24,7 @@ We have successfully completed the preliminary phase of our project. To document
    - Integrate a histogram to effectively visualize the distribution of wine quality scores.
 
 5. **QQ Plot for Wine Quality**:
-   - Develop separate QQ plots for wines classified into different quality categories: bad, middle, and good. This will aid in better understanding the distribution of quality scores across these tiers.
+   - Develop separate QQ plots for wines classified into different quality categories: bad(3-4), middle(5-6-7), and good(8-9) to better understand our outliers.
 
 6. **Heatmap Modifications**:
    - Modify existing heatmaps to exclude correlations below 0.1, and highlight areas depicting higher correlations for more clarity.
@@ -37,8 +37,6 @@ Please let us know if we have misunderstood any of your notes or questions.
 We would also like to request a meeting with Marc from 5 to 6 on Thursday, if that time is still available. We will send the Jupyter Book before the office hour for your review.
 
 Thank you for your continued support and guidance.
-
-Best regards,
 
 Best regards,
 Zofia and Fengyu
