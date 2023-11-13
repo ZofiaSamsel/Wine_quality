@@ -27,3 +27,12 @@ In the *Modeling wine preferences by data mining from physicochemical properties
 ### Clustering:
 1. Explore different compositions and characteristics of high-rated white/red wines to determine if variations such as sweet and dry wines exist, and whether their composition differs significantly.
 2. Apply K-means clustering and consider comparing with other clustering algorithms. Utilize heat maps alongside other visualization techniques like dendrograms for a comprehensive visual representation.
+
+
+### Comments 13.11
+- Add information when did they collect the date?
+- outiers - normalization,  
+- top quality modeling -  see if our features make sense - more like associations, not predictors
+- the graphs should have a big font (with the name according to what we can see)
+
+- while presentiong the plot - comment the plot (what is important, what is not so important - precise description)
