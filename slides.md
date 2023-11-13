@@ -28,8 +28,7 @@ layout: default
 - **Statistics & Outliers:** Assessing wine quality homogeneity and exploring outliers.
 - **Predictive Analysis:** Classifying wine quality tiers, evaluating models like logistic regression and Random Forest for accuracy, and identifying key quality factors. 
 - **Preventive Insights:** Developing strategies to prevent poor-quality production and determining distinguishing factors of top-quality wines.
-- **Clustering Techniques:** Examining variations in high-rated wines and applying K-means clustering for in-depth composition analysis.
-(what about using PCA?? here)
+- **Clustering Techniques:** Examining variations in high-rated wines and applying PCA for in-depth analysis.
 
 <br>
 
