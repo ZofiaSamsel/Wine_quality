@@ -1,4 +1,5 @@
 # 🍇 Unveiling the Secrets of Wine Quality 🍷
+
 > Bypassing traditional tasting methods, this project employs data analysis to predict the quality of wine based on its chemical features.
 
 In our project, our primary objective is to conduct a comprehensive analysis of wine quality, focusing on its psychochemical properties. Since the taste and overall quality of wine are influenced by a complex interplay of various characteristics, we aim to delve into the intricate relationships among these chemical properties. By doing so, we aspire to enhance the production of high-quality wine and offer valuable insights to winemakers. Using data-driven methods, our goal is to design a predictive model for wine quality and uncovering the most important factor influencing the quality. Additionally, we seek to discern the distinctions between white and red wine, unraveling unique psychochemical profiles for each type.
