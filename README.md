@@ -44,7 +44,6 @@ This project was completed as part of the LPI Data Science Course, under the gui
 
 #### 1.3.1 Chemical Features:
 🧪 Data recorded by iLab, a computerized system managing wine sample testing.
-
 1. **Fixed Acidity (g/dm³)**: 
    - *Role in Production*: Represents the total concentration of acids.
    - *Impact on Taste and Quality*: Influences freshness, crispness, and aging potential.
@@ -83,13 +82,10 @@ This project was completed as part of the LPI Data Science Course, under the gui
 
 - **Acidity and pH:**
   - *Connection:* The relationship between fixed acidity and pH is critical. Higher fixed acidity tends to lower the pH, influencing the wine's color, stability, and microbial environment.
-
 - **Sugar and Alcohol:**
   - *Connection:* The level of residual sugar at the end of fermentation affects the final alcohol content. Balancing these elements is crucial for achieving the desired sweetness and alcohol levels.
-
 - **Sulfur Dioxide and Volatile Acidity:**
   - *Connection:* Proper use of sulfur dioxide can help control volatile acidity, preventing the development of unwanted vinegar-like flavors.
-
 - **Chlorides and Total Sulfur Dioxide:**
   - *Connection:* The balance between chlorides and total sulfur dioxide contributes to the wine's structure and preservation. Monitoring both helps avoid undesirable tastes.
 
@@ -120,9 +116,11 @@ Our reserach questions enhances and expands upon prior studies by:
 - **Predictive Modeling**: Noticing a distinct trend in wine alcohol level (quality 3-5 and 6-9), we employ piecewise linear regression. This method categorizes wines into quality tiers while assessing the impact of different factors on wine quality.
  
 ![Box Plots for White Wine Without Outliers](figures/2_Boxplots_without_outliers/Box%20Plots%20for%20White%20Wine%20(Without%20Outliers).png)
+
 *Wine alcohol level differs in the group of quality 3-5 and 6-9.*
 
 ![](https://online.stat.psu.edu/onlinecourses/sites/stat501/files/11interaction/strength_ratio_plot2.gif)
+
 *[Piecewise linear regression](https://online.stat.psu.edu/stat501/lesson/8/8.8)*
 
 
@@ -153,10 +151,11 @@ The current approach relies on traditional feature selection methods.
 
 ## 4.3 Subgroup Analysis
 **Limitation**:
-The QQ plot revealed a significant subgroup in chlorides. 
+The QQ plot revealed a significant subgroup in columns like chlorides. 
 ![ ](figures/3_QQ_plots_log_corrected/QQ%20Plots%20for%20White%20Wine(Second%20Log).png)
 
 **Improvement**
+
 Implementing K-means clustering could further refine our understanding of such subgroups.
 
 ## 4.4 Analysis of Only Physicochemical Data
