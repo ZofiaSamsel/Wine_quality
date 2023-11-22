@@ -112,6 +112,8 @@ Our reserach questions enhances and expands upon prior studies by:
 ### 3.2 🛠️ Model Building
 - **Feature Selection**: Through cluster maps and correlation matrices, we explore the relationships between various features and wine quality. To avoid multicollinearity, we carefully select only one feature from groups of highly correlated attributes.
 - **Predictive Modeling**: Noticing a distinct trend in wine quality ratings (quality 3-5 and 6-9), we employ piecewise linear regression. This method categorizes wines into quality tiers while assessing the impact of different factors on wine quality.
+  
+![ ](/figures/2_Boxplots_without_outliers/Box Plots for White Wine (Without Outliers).png)
 
 ### 3.3 🥂 Project Outcomes
 - **Quality Prediction**: Our models are designed to accurately forecast wine quality, highlighting the key factors that contribute to producing high-quality wines.
