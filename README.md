@@ -2,10 +2,13 @@
 
 > Bypassing traditional tasting methods, this project employs data analysis to predict the quality of wine based on its chemical features.
 
-In our project, our primary objective is to conduct a comprehensive analysis of wine quality, focusing on its psychochemical properties. Since the taste and overall quality of wine are influenced by a complex interplay of various characteristics, we aim to delve into the intricate relationships among these chemical properties. By doing so, we aspire to enhance the production of high-quality wine and offer valuable insights to winemakers. Using data-driven methods, our goal is to design a predictive model for wine quality and uncovering the most important factor influencing the quality. Additionally, we seek to discern the distinctions between white and red wine, unraveling unique psychochemical profiles for each type.
+In our project, our primary objective is to conduct a comprehensive analysis of wine quality, focusing on its physicochemical properties.
 
-Project done as part of a LPI Data Science Course.
+Since the taste and overall quality of wine are influenced by a complex interplay of various characteristics, we aim to delve into the intricate relationships among these chemical properties. Our aspiration is to enhance the production of high-quality wine and provide valuable insights to winemakers.
 
+Using data-driven methods, our goal is to develop a predictive model for wine quality, uncovering the most significant factors influencing quality. Additionally, we seek to discern the distinctions between white and red wines, unraveling unique physicochemical profiles for each type.
+
+This project was completed as part of the LPI Data Science Course, under the guidance of Marc and Liubov.
 
 ## 🍷 1. Introduction
 
@@ -20,10 +23,13 @@ Project done as part of a LPI Data Science Course.
      - Alcohol level is a key factor in determining wine quality. Citric acid and residual sugar are more significant in white wines, whereas sulphates are highly important in both types.
 
 ### 🍇 1.2 Info about the Wine:
-- **Types**: Both white and red wines from the Vinho Verde region in northwestern Portugal 🇵🇹.
+- **Types**: Both white and red wines from the [Vinho Verde region](https://www.vinhoverde.pt/en/about-vinho-verde) in northwestern Portugal 🇵🇹.
 - **Production**: Represents 15% of Portuguese production.
 
 ### 📊 1.3 Info about the Datasets:
+
+![df](/figures/dataframe.png)
+
 - **Wines**: 1599 red and 4898 white samples.
 - **Collection**:
    - ⏳ Timeframe: May 2004 to February 2007.
@@ -106,8 +112,8 @@ Our reserach questions enhances and expands upon prior studies by:
 
 ### 3.1 📊 Statistical Analysis
 
-- **Skewness Detection**: Utilizing Quantile-Quantile (QQ) plots, we analyze the distribution of wine qualities. Where skewness is evident, we apply logarithmic transformations to normalize the data.
-- **Outliers Detection**: We employ boxplots and Z-score calculations (with a threshold of 6) to pinpoint outliers. This helps in understanding and addressing anomalies in the dataset.
+- **Skewness Detection**: Utilizing Quantile-Quantile (QQ) plots, we analyze the distribution of wine qualities. Where skewness is evident, we apply logarithmic transformations to normalize the data. After the first log transformation, we found that not all transformations decrease skewness, so we chose two features from each dataset for a second log transformation.
+- **Outlier Detection**: We employ boxplots and Z-score calculations (with a threshold of 6) to pinpoint outliers. The reason why we chose a threshold of 6 is that these chemical features do not significantly deviate from the norm (for example, compared to sales data). This approach helps in understanding and addressing anomalies in the dataset. We only deleted 18 outliers from these two datasets.
 
 ### 3.2 🛠️ Model Building
 - **Feature Selection**: Through cluster maps and correlation matrices, we explore the relationships between various features and wine quality. To avoid multicollinearity, we carefully select only one feature from groups of highly correlated attributes.
@@ -116,14 +122,49 @@ Our reserach questions enhances and expands upon prior studies by:
 ![Box Plots for White Wine Without Outliers](figures/2_Boxplots_without_outliers/Box%20Plots%20for%20White%20Wine%20(Without%20Outliers).png)
 *Wine alcohol level differs in the group of quality 3-5 and 6-9.*
 
+![](https://online.stat.psu.edu/onlinecourses/sites/stat501/files/11interaction/strength_ratio_plot2.gif)
+*[Piecewise linear regression](https://online.stat.psu.edu/stat501/lesson/8/8.8)*
+
+
 ### 3.3 🥂 Project Outcomes
 - **Quality Prediction**: Our models are designed to accurately forecast wine quality, highlighting the key factors that contribute to producing high-quality wines.
-- **Recipe Derivation**: By analyzing the coefficients of significant features in our model, we derive ranges for these key attributes, effectively creating 'recipes' for high-quality wines.
+- **Recipe Derivation**: By analyzing the coefficients of significant features in our model, we derive ranges for these key attributes, effectively creating 'recipes' for both poor-quality and high-quality wines.
 
-## 4. 🚀 Future Directions and Limitations
+## 4. 🚀 Limitations and Future Directions 
 
-- **Subgroup Analysis via K-Means**: The QQ plot revealed a significant subgroup in chlorides. Implementing K-means clustering could further refine our understanding of such subgroups.
+### 4.1 Single Model Approach
+**Limitation**:
+The analysis employs a single model, potentially limiting the understanding of the underlying patterns.
+
+**Improvement**:
+- *Compare Multiple Models:*
+  Utilize different models, such as Random Forest, to gain a more comprehensive view of feature importance and enhance predictive performance.
+
+### 4.2 Feature Selection
+
+**Limitation**:
+The current approach relies on traditional feature selection methods.
+
+**Improvements**:
+- *Explore Alternative Feature Selection Methods (e.g., PCA):*
+  Investigate alternative methods like Principal Component Analysis (PCA) to capture latent features effectively.
+- *Utilize Data Split Based on Density:*
+  Given the indication of two potential subclasses based on density in the models, consider splitting the dataset accordingly for more nuanced analysis.
+
+## 4.3 Subgroup Analysis
+**Limitation**:
+The QQ plot revealed a significant subgroup in chlorides. 
 ![ ](figures/3_QQ_plots_log_corrected/QQ%20Plots%20for%20White%20Wine(Second%20Log).png)
-- **Enhanced Feature Selection**: Future work could explore alternative methods like Principal Component Analysis (PCA) for more robust feature selection.
-- **Model Diversification**: Comparing multiple models could provide a more comprehensive understanding of the factors influencing wine quality.
-- **Dataset Expansion**: To improve generalizability, incorporating additional data like weather conditions, vintage year, and regional specifics could offer a more holistic analysis of wine quality.
+
+**Improvement**
+Implementing K-means clustering could further refine our understanding of such subgroups.
+
+## 4.4 Analysis of Only Physicochemical Data
+
+**Limitation**:
+The analysis focuses solely on physicochemical data, excluding other potentially influential factors.
+
+**Improvement**:
+- *Expand Dataset for Generalization:*
+  Include additional data dimensions such as weather, temperature, year, and region to enhance the model's ability to generalize beyond the current scope.
+
