@@ -111,16 +111,19 @@ Our reserach questions enhances and expands upon prior studies by:
 
 ### 3.2 🛠️ Model Building
 - **Feature Selection**: Through cluster maps and correlation matrices, we explore the relationships between various features and wine quality. To avoid multicollinearity, we carefully select only one feature from groups of highly correlated attributes.
-- **Predictive Modeling**: Noticing a distinct trend in wine quality ratings (quality 3-5 and 6-9), we employ piecewise linear regression. This method categorizes wines into quality tiers while assessing the impact of different factors on wine quality.
-  
-![ ](/figures/2_Boxplots_without_outliers/Box Plots for White Wine (Without Outliers).png)
+- **Predictive Modeling**: Noticing a distinct trend in wine alcohol level (quality 3-5 and 6-9), we employ piecewise linear regression. This method categorizes wines into quality tiers while assessing the impact of different factors on wine quality.
+ 
+![Box Plots for White Wine Without Outliers](figures/2_Boxplots_without_outliers/Box%20Plots%20for%20White%20Wine%20(Without%20Outliers).png)
+*Wine alcohol level differs in the group of quality 3-5 and 6-9.*
 
 ### 3.3 🥂 Project Outcomes
 - **Quality Prediction**: Our models are designed to accurately forecast wine quality, highlighting the key factors that contribute to producing high-quality wines.
 - **Recipe Derivation**: By analyzing the coefficients of significant features in our model, we derive ranges for these key attributes, effectively creating 'recipes' for high-quality wines.
 
 ## 4. 🚀 Future Directions and Limitations
+
 - **Subgroup Analysis via K-Means**: The QQ plot revealed a significant subgroup in chlorides. Implementing K-means clustering could further refine our understanding of such subgroups.
+![ ](figures/3_QQ_plots_log_corrected/QQ%20Plots%20for%20White%20Wine(Second%20Log).png)
 - **Enhanced Feature Selection**: Future work could explore alternative methods like Principal Component Analysis (PCA) for more robust feature selection.
 - **Model Diversification**: Comparing multiple models could provide a more comprehensive understanding of the factors influencing wine quality.
 - **Dataset Expansion**: To improve generalizability, incorporating additional data like weather conditions, vintage year, and regional specifics could offer a more holistic analysis of wine quality.
